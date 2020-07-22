@@ -3,8 +3,13 @@ language: generic
 jobs:
   include:
     - os: linux
+      arch: amd64
       name: "Linux"
       dist: bionic
+    - os: linux
+      arch: arm64
+      name: "Linux"
+      dist: bionic  
 
 addons:
   apt:
